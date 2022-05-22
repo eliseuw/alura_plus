@@ -1,0 +1,181 @@
+:root { /*e um jeito de usar variaveis voce renomeia as cores para replicalas mais tarde 
+    *mto mais facil*/
+    --branco-principal:#FFFFFF;
+    --cinza-secundario:#C0C0C0;
+    --botao-azul:#167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+body {
+    background: var(--cor-de-fundo); /*chamar variavel*/
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal );
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+*{ /*seleciona todos os elemento e faz o que pedir*/
+    margin: 0;
+    padding: 0;
+}
+.principal{
+    background-image: url(imagens/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+
+
+}
+.container{
+    height: 100vh;/*serve para limitar a visão de acordo com a visão do dispositivo*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__imagem{
+    margin: 1em 0 2em 0;/*relogio*/
+}
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;   
+    padding: 1em; /*margem interna*/
+    color: var(--branco-principal); 
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+  }
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+
+    align-items: center;
+    margin: 0 6em;
+
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    font-weight: 400;
+    font-size: 16px;
+    color: #F9F9F9;
+}
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.dispositivos{
+    text-align: center;
+    
+}
+.dispositivos__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin: 5em 0 2em 0;
+    
+}
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+    font-weight: 700;
+
+
+}
+
+.rodape{
+    margin-top: 10em;
+    text-align: center;
+}
+
+.rodape__logo{
+    margin-bottom: 2em;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.lista__link {
+    padding: 0 0.5em;
+}
+
+.lista_link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 1em;
+
+}
+
+.rodape__texto{
+    text-align: center;
+    margin: 2em 0 1em 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+}
+
+.rodape__texto2{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cinza-secundario);
+    margin-bottom: 10em;
+
+}
+
+.lista_link a:hover{
+    color: var(--botao-azul);
+
+}
+
+.lista_link a:active {
+    color: purple;
+}
+
+.container__botao:hover{
+    transition: 0.5s;
+    color: var(--cor-de-fundo);
+    background-color: var(--botao-azul-efeito);
+
+}
